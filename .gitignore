@@ -221,7 +221,7 @@ _pkginfo.txt
 *.user
 *.sln.docstates
 
-# Database files
+# Database files - IMPORTANTE: Ignorar apenas os arquivos locais do banco
 *.mdf
 *.ldf
 *.ndf
@@ -361,6 +361,13 @@ FodyWeavers.xsd
 # Mac files
 .DS_Store
 
-# Appsettings (segurança - descomentar se necessário)
-# appsettings.Development.json
+# ==================================================
+# CONFIGURAÇÕES SENSÍVEIS - Descomentar se necessário
+# ==================================================
+# Appsettings com dados sensíveis (senhas, connection strings de produção)
+appsettings.Development.json
 # appsettings.Production.json
+
+# ==================================================
+# IMPORTANTE: NÃO IGNORAR AS MIGRATIONS!
+# ==================================================
